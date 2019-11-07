@@ -39,7 +39,8 @@ def gradient_3d_loss(x, y):
 def mse_grad_loss(y_true, y_pred):
     mse_loss = mse(y_true, y_pred)
     grad_loss = gradient_3d_loss(y_true, y_pred)
-    alpha = 1/7.85
+    #alpha = 1/7.85
+    alpha = 1/23.85
     return 1.*mse_loss + alpha*grad_loss
     
     
